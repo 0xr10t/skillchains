@@ -1,0 +1,126 @@
+.contact-container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: #000000;
+  font-family: 'Glory', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.contact-header h1 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.team-member-card {
+  display: flex;
+  background: #000000;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  padding: 0.8rem;
+  gap: 1rem;
+  height: 180px;
+}
+
+.member-image {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #FFFFFF;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-info h2 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 0.8rem 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #FFFFFF;
+}
+
+.contact-item i {
+  font-size: 16px;
+  width: 30px;
+  text-align: center;
+}
+
+.contact-item span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Add contact button styles to App.css */
+.contact-button {
+  background: var(--gradient-1);
+  color: white !important;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease !important;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3);
+}
+
+.contact-button::after {
+  display: none;
+}
+
+.contact-button i {
+  font-size: 1.1rem;
+} 
